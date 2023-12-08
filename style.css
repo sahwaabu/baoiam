@@ -38,6 +38,7 @@ body::before{
 h1 {
     font-weight: bold;
     color: #040052;
+    text-align: center;
 }
  .title {
     position: relative;
@@ -67,7 +68,7 @@ h1 {
   background: #fff;
   border-radius: 30px;
   border-color: #fa2424;
-  padding: 20px;
+  padding: 10px 16px 10px 30px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
   transition: all 0.4s ease;
 }
@@ -80,11 +81,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
+  
 }
-span {
-    font-weight: bold;
-}
+
 .cards .card .content .img{
   height: 150px;
   width: 250px;
@@ -101,15 +100,48 @@ span {
   object-fit: contain;
 }
 .card .content .name{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
   position: relative;
     background: -webkit-linear-gradient(0deg, #fa2424, #fb8721);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
+    line-height:22px;
+}
+p {
+    font-size: 14px;
+    /* text-align: center; */
+}
+span {
+    font-weight: bold;
+    color: #fa2424;
+    
     
 }
-
+ul li::before {
+    content: "";
+    border-color: transparent#fa2424;
+    border-style: solid;
+    border-width: 0.3em 0 0.3em 0.4em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -0.9em;
+    top: 0.7em;
+    bottom: 0.2em;
+    position: relative; 
+    list-style: none;
+    
+    
+}
+ul {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 12px;
+    /* text-align: center; */
+    padding-left: 40px;
+}
 
  .container .button{
   width: 100%;
@@ -139,6 +171,8 @@ span {
     border-radius: 5px;
     transition: 3s;
     cursor: pointer;
+    margin-top: 0.5em;
+    margin-bottom: auto;
     
 }
 #one:checked ~ .button .one{
